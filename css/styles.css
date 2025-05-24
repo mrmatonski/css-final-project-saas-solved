@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+p {
+    color: #555353; 
+}
+
+body, h3, p {
+    margin: 0; 
+    padding: 0; 
+}
+#top-header-first {
+    font-size: 2.5rem; 
+    width: 250px; 
+    margin-left: 20px; 
+    font-weight: 400;
+    opacity: 0.9; 
+}
+#first-paragraph {
+    margin-left: 20px; 
+    
+}
+#why {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.navbar {
+    display: flex; 
+    gap: 15px; 
+    justify-content: flex-end; 
+    margin-right: 10px; 
+    height: 100px; 
+     
+}
+.navbar > a {
+    text-decoration: none;
+    color: rgb(34, 34, 34); 
+}
+.navbar > a:hover {
+    color: #2020c3;
+    height: 30px; 
+    
+    border-radius: 6px;
+    padding: 2px; 
+}
+#header-button:hover {
+    padding: 2px; 
+    background-color: white; 
+    color: #2020c3; 
+}
+#header-button {
+    height: 30px;
+    border-radius: 20px; 
+    background-color: #2020c3;  
+    color: white; 
+}
+
+#header-icon {
+    width: 75px; 
+    height: 75px; 
+    position: fixed; 
+    left: 30px; 
+}
+.why {
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    margin: 0 200px; 
+    gap: 5px; 
+    height: 250px; 
+    margin-top: 50px; 
+}
+#button-two {
+    width: 100px; 
+    height: 30px; 
+    background-color: #2020c3;
+    border-radius: 20px;  
+    color: white; 
+    margin-left: 20px; 
+}
+#button-two:hover {
+    background-color: white; 
+    color: #2020c3;
+    padding: 2px; 
+    
+}
+.button > a {
+    text-decoration: none;
+    color: blue; 
+}
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/assets/bg/background-top.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px; 
+
+}
+.button {
+    display: flex; 
+    gap: 15px; 
+    align-items: center; 
+}
+.horizontal-items {
+    display: flex; 
+    gap: 25px; 
+    justify-content: center;
+    align-items: center;
+    height: 125px; 
+}
+.pricing {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 5px;
+    margin-top: 25px;    
+}
+.left-pricing {
+    display: flex; 
+}
+.bottom-stuff {
+    display: flex; 
+}
+.left-paragraph, .left-button-bottom {
+    display: flex; 
+    flex-direction: column;
+}
+#bottom-button {
+    width: 100px; 
+    height: 35px; 
+    border-radius: 20px; 
+    background-color: rgb(61, 61, 242); 
+    color: white; 
+}
+.right {
+    display: flex; 
+    height: 400px; 
+}
+.left {
+    display: flex; 
+    flex-direction: column;
+}
+.hire-us-bottom-container-before-footer {
+    display: flex; 
+}
+.checkbox {
+    display: flex; 
+}
+.privacy {
+    display: flex; 
+    gap: 25px; 
+}
+.privacy-left {
+    color: gray; 
+}
+.privacy-right {
+    color: rgb(65, 65, 240); 
+}
+.button-get-started-bottom {
+    display: flex;
+    justify-content: center;  
+}
+#get-started {
+    background-color: rgb(65, 65, 240); 
+    border-radius: 20px; 
+    color: white; 
+}
+#google-logo-right, #atlasian-logo, #asana-logo, #paypal, #weave, #ads {
+    width: 75px; 
+    height: 75px; 
+    box-shadow: 3px 3px 3px black; 
+    border-radius: 50%; 
+    position: relative; 
+    left: 70px; 
+    
+}
+#ads {
+    position: relative; 
+    left: -250px;
+    top: 270px;  
+}
+#paypal {
+    position: relative; 
+    left: -150px; 
+    top: 150px; 
+    
+}
+#atlasian-logo {
+    position: relative; 
+    left: 100px; 
+    top: 25px; 
+}
+#asana-logo {
+    position: relative; 
+    left: 200px;
+    top: 20px;  
+}
+#weave {
+    position: relative; 
+    top: 150px; 
+    left: -20px; 
+}
