@@ -5,7 +5,6 @@
 p {
     color: #555353; 
 }
-
 body, h3, p {
     margin: 0; 
     padding: 0; 
@@ -27,11 +26,12 @@ body, h3, p {
 }
 .navbar {
     display: flex; 
+    box-shadow: 5px 5px 5px black; 
+    flex-wrap: wrap;
     gap: 15px; 
     justify-content: flex-end; 
     margin-right: 10px; 
     height: 100px; 
-     
 }
 .navbar > a {
     text-decoration: none;
@@ -40,22 +40,45 @@ body, h3, p {
 .navbar > a:hover {
     color: #2020c3;
     height: 30px; 
-    
     border-radius: 6px;
     padding: 2px; 
+}
+#price {
+    font-size: 4rem;
+    font-weight: 400;
 }
 #header-button:hover {
     padding: 2px; 
     background-color: white; 
     color: #2020c3; 
 }
+.budget {
+    display: flex; 
+    gap: 25px; 
+    
+}
+#budget, #country {
+    width: 150px; 
+    background-color: white; 
+    height: 30px; 
+    font-weight: 500;
+}
+#man {
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%; 
+    padding: 10px; 
+    margin-top: 20px; 
+}
+ 
+
 #header-button {
     height: 30px;
     border-radius: 20px; 
     background-color: #2020c3;  
     color: white; 
+    margin-right: 15px; 
 }
-
 #header-icon {
     width: 75px; 
     height: 75px; 
@@ -83,7 +106,6 @@ body, h3, p {
     background-color: white; 
     color: #2020c3;
     padding: 2px; 
-    
 }
 .button > a {
     text-decoration: none;
@@ -91,12 +113,12 @@ body, h3, p {
 }
 .main-top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-image: url(/assets/bg/background-top.svg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px; 
-
 }
 .button {
     display: flex; 
@@ -109,19 +131,35 @@ body, h3, p {
     justify-content: center;
     align-items: center;
     height: 125px; 
+    padding: 50px; 
+}
+.item {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    
+    gap: 40px; 
 }
 .pricing {
     display: flex; 
     flex-direction: column;
     align-items: center; 
     gap: 5px;
-    margin-top: 25px;    
+    margin-top: 50px 50px;  
+    padding: 100px;    
 }
 .left-pricing {
     display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 .bottom-stuff {
     display: flex; 
+    
+    width: 100%; 
+    gap: 20px; 
+    margin: 0 25px; 
+    padding: 25px; 
 }
 .left-paragraph, .left-button-bottom {
     display: flex; 
@@ -137,6 +175,7 @@ body, h3, p {
 .right {
     display: flex; 
     height: 400px; 
+    padding: 20px; 
 }
 .left {
     display: flex; 
@@ -144,6 +183,10 @@ body, h3, p {
 }
 .hire-us-bottom-container-before-footer {
     display: flex; 
+    background-color: #030364; 
+    color: white; 
+    gap: 30px; 
+    padding: 25px; 
 }
 .checkbox {
     display: flex; 
@@ -169,12 +212,10 @@ body, h3, p {
 }
 #google-logo-right, #atlasian-logo, #asana-logo, #paypal, #weave, #ads {
     width: 75px; 
-    height: 75px; 
-    box-shadow: 3px 3px 3px black; 
+    height: 75px;  
     border-radius: 50%; 
     position: relative; 
     left: 70px; 
-    
 }
 #ads {
     position: relative; 
@@ -185,7 +226,6 @@ body, h3, p {
     position: relative; 
     left: -150px; 
     top: 150px; 
-    
 }
 #atlasian-logo {
     position: relative; 
@@ -202,3 +242,64 @@ body, h3, p {
     top: 150px; 
     left: -20px; 
 }
+#tell {
+    width: 300px; 
+    height: 150px; 
+    border-radius: 12px;
+}
+.bottom-container-right-side { 
+    background-color: white; 
+    border-radius: 12px;
+    display: flex; 
+    flex-direction: column;
+    gap: 15px; 
+    padding: 10px;
+}
+.bottom-container-left-side {
+    margin-left: 50px; 
+    font-size: 1.2rem; 
+}
+input {
+    border-radius: 5px;
+}
+#component, #image, #cancel, #moneyback {
+    width: 75px; 
+    height: 75px; 
+}
+.left-bottom {
+    box-shadow: 3px 3px 3px black;
+    height: 500px; 
+    padding: 20px;
+}
+.bottom-paragraph-0  { 
+    color: #c8cecf; 
+}
+.footer-bottom-container {
+    display: flex; 
+    gap: 30px; 
+}
+#bottom-logo-pic {
+    width: 75px; 
+    height: 75px; 
+}
+.logo-and-address, .features, .documentation, .resources {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px; 
+    padding: 20px; 
+}
+#blue { background-color: blue; color: white; padding: 3px;  }
+#blue-2 { color: blue; }
+.company {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+@media (max-width: 368px) {
+    #weave {
+        position: relative; 
+        top: -400px; 
+    }
+
+}
+

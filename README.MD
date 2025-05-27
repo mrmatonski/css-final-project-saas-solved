@@ -12,20 +12,20 @@ Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkX
 
 ## Standard Requirements
 
-- [ ] Fork the project to your github account
-- [ ] Clone the project to your computer
+- [x] Fork the project to your github account
+- [x] Clone the project to your computer
 - [ ] Open the project in VSCode with `code <cloned_repo_folder_name>`
 - [ ] All the tasks of the "Specific requirements" section MUST be solved
 - [ ] The code of the index.html and styles.css (all css files) should pass the W3C validation (Feel free to use either the [W3C web validator](https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator) VSCode extension or the [Online w3c Markup Validation Service](https://validator.w3.org/#validate_by_input))
-- [ ] The code MUST be formatted with Prettier.
-- [ ] Push the changes to the Github repo, when finished.
+- [x] The code MUST be formatted with Prettier.
+- [x] Push the changes to the Github repo, when finished.
 - [ ] Submit a .txt file with the Github repo url.
 
 ## Specific Requirements
 
 `General`
 
-- [ ] The layout of the submitted project must match the Figma mockups as closely as possible (100% match) for all three screen sizes: desktop, tablet, and mobile.
+- [x] The layout of the submitted project must match the Figma mockups as closely as possible (100% match) for all three screen sizes: desktop, tablet, and mobile.
 - [ ] The project initially includes a single CSS file, but you can use multiple files if needed. Ensure that styles are not duplicated across these files.
 - [ ] You can use any fonts you prefer, such as standard library sans-serif fonts or sans-serif web fonts.
 - [ ] The screenshots of the solved version of that project are located in `/assets/screenshots/`.
