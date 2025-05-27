@@ -295,11 +295,66 @@ input {
     flex-direction: column;
     justify-content: space-evenly;
 }
-@media (max-width: 368px) {
-    #weave {
-        position: relative; 
-        top: -400px; 
-    }
-
+@media (max-width: 1023px) {
+  .right {
+    flex-direction: column;
+    margin-bottom: 50px; 
+  }
+  .right-right-item {
+    width: 100%; 
+    margin-bottom: 50px;
+  }
+ .hire-us-bottom-container-before-footer {
+    margin-top: 300px;
+    padding: 20px; 
+ }
+ .bottom-stuff {
+    flex-direction: column;
+ }
+ #weave {
+    top: -100px; 
+    left: 90px; 
+ }
+ .main-top {
+    align-items: center;
+    flex-direction: column;
+    gap: 30px; 
+    width: 100%; 
+ }
+ #top-header-first {
+    width: 600px; 
+    font-size: 1.4rem; 
+    align-items: center;
+    display: flex; 
+    flex-direction: column;
+    
+ }
+ .left {
+    gap: 30px; 
+    align-items: center;
+ }
+ .bottom-stuff {
+    flex-direction: row;
+ }
+ .right, .right-right {
+    flex-direction: row;
+ }
+.hire-us-bottom-container-before-footer {
+    display: flex; 
+    flex-direction: column;
 }
-
+.bottom-container-right-side {
+    display: flex; 
+    justify-content: center;
+    width: 90%; 
+    margin-left: 50px; 
+}
+.footer-bottom-container, .documentation, .resources {
+    flex-wrap: wrap;
+    
+}
+.documentation {
+    margin-left: 38%; 
+}
+ 
+}
