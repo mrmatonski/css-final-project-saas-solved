@@ -119,6 +119,7 @@ body, h3, p {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px; 
+    width: 100%; 
 }
 .button {
     display: flex; 
@@ -193,9 +194,18 @@ body, h3, p {
 }
 .privacy {
     display: flex; 
+    flex-direction: column;
     gap: 25px; 
 }
-.privacy-left {
+.privacy-left > p {
+    color: gray; 
+    display: flex; 
+    justify-content: center;
+}
+.bottom-text-blue {
+    color: #2a2abe; 
+}
+.gray {
     color: gray; 
 }
 .privacy-right {
@@ -215,12 +225,12 @@ body, h3, p {
     height: 75px;  
     border-radius: 50%; 
     position: relative; 
-    left: 70px; 
+    left: -20px; 
 }
 #ads {
     position: relative; 
-    left: -250px;
-    top: 270px;  
+    left: -150px;
+    top: -100px;  
 }
 #paypal {
     position: relative; 
@@ -274,6 +284,7 @@ input {
 .bottom-paragraph-0  { 
     color: #c8cecf; 
 }
+
 .footer-bottom-container {
     display: flex; 
     gap: 30px; 
@@ -293,9 +304,133 @@ input {
 .company {
     display: flex; 
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px; 
 }
-@media (max-width: 1023px) {
+.para-1 {
+    padding: 15px; 
+    text-align: center;
+}
+
+/*mobile*/
+
+
+@media (max-width: 767px) {
+    .horizontal-items {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px; 
+        margin-top: 60px; 
+       
+    }
+    .main-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; 
+    }
+    .left {
+        gap: 30px; 
+    }
+    .logos-right {
+        width: 250px; 
+        height: 100%; 
+    }
+    #weave {
+        top: -250px; 
+        left: 115px; 
+    }
+    #asana-logo {
+        left: -110px; 
+        top: 90px; 
+    }
+    .why {
+        display: flex; 
+        justify-content: center;
+        gap: 30px; 
+        padding: 15px; 
+    }
+    .para-1 {
+        display: flex; 
+        flex-direction: column;
+        gap: 30px; 
+        height: 100%; 
+        width: 300px;  
+        position: relative; 
+        left: -95px; 
+        font-size: 1.2rem; 
+        
+    }
+    .right {
+        height: 100%; 
+    }
+    .item {
+        display: flex; 
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .bottom-stuff {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px; 
+    }
+    .left-bottom {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; 
+        padding: 10px; 
+    }
+    .right {
+        display: flex; 
+        flex-direction: column;
+        gap: 30px; 
+    }
+    .hire-us-bottom-container-before-footer {
+        display: flex; 
+        flex-direction: column;
+    }
+    .bottom-container-right-side {
+        display: flex; 
+        flex-direction: column;
+    }
+    .names {
+        display: flex; 
+        flex-direction: column;
+        gap: 30px; 
+    }
+    .email input {
+        width: 100%; 
+    }
+    .budget {
+        display: flex; 
+        flex-direction: column;
+        gap: 30px; 
+    }
+   #budget, #country, #tell {
+    width: 100%; 
+   }
+  .footer-bottom-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    height: 100%; 
+    padding: 100px; 
+  }
+  .logo-and-address {
+    display: flex; 
+    flex-direction: column;
+    gap: 30px; 
+    align-items: center;
+  }
+    
+}
+
+/*tablet*/
+
+
+@media (min-width: 767px) AND (max-width: 1023px) {
   .right {
     flex-direction: column;
     margin-bottom: 50px; 
@@ -356,5 +491,9 @@ input {
 .documentation {
     margin-left: 38%; 
 }
- 
+ .item {
+    display: flex; 
+    flex-direction: row;
+ }
+
 }
