@@ -210,9 +210,19 @@ h3 {
 }
 .bottom-container {
     display: flex; 
+    flex-direction: row;
     gap: 25px; 
     justify-content: center;
     margin-bottom: 50px;
+}
+.middle-lower {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.right {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
 }
 #components, #cancel, #images, #moneyback {
     width: 80px; 
@@ -410,6 +420,7 @@ button:hover {
     }
     .bottom-container {
         padding: 15px; 
+      
     }
     .left-form {
         margin-bottom: 50px;
