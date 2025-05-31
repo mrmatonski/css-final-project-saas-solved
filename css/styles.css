@@ -1,499 +1,603 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0; 
+    padding: 0;
     font-family: sans-serif;
 }
-p {
-    color: #555353; 
-}
-body, h3, p {
-    margin: 0; 
-    padding: 0; 
-}
-#top-header-first {
-    font-size: 2.5rem; 
-    width: 250px; 
-    margin-left: 20px; 
-    font-weight: 400;
-    opacity: 0.9; 
-}
-#first-paragraph {
-    margin-left: 20px; 
+.my-button {
+    display: block; 
+    
+     
     
 }
-#why {
-    font-size: 2rem;
-    font-weight: 600;
+
+#charlotte {
+    color: white; 
+}
+#video-button {
+    width: 100px; 
+    height: 40px;  
+    background-color: blue; 
+    color: white; 
+    border-radius: 20px; 
+    opacity: 0.7; 
+    margin-bottom: 25px; 
+}
+#top-para-blue {
+    color: blue; 
+    margin-bottom: 50px;
+}
+.button-top-page {
+    display: flex; 
+    gap: 20px; 
+}
+#number {
+    color: blue; 
+}
+#hamburger-menu {
+    display: none; 
+}
+#menu {
+    display: none; 
+}
+h3 {
+    font-weight: bold;
+    color: black; 
+}
+#front {
+    width: 100px; 
+    height: 75px; 
 }
 .navbar {
     display: flex; 
-    box-shadow: 5px 5px 5px black; 
-    flex-wrap: wrap;
-    gap: 15px; 
-    justify-content: flex-end; 
-    margin-right: 10px; 
-    height: 100px; 
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px; 
+    margin-right: 25px;
+    margin-top: -35px; 
+    box-shadow: 5px 5px 5px silver;
+}
+#one-top {
+    color: gray; 
+    font-size: 1.2rem; 
+    
 }
 .navbar > a {
     text-decoration: none;
-    color: rgb(34, 34, 34); 
+    color: gray; 
 }
 .navbar > a:hover {
-    color: #2020c3;
-    height: 30px; 
-    border-radius: 6px;
-    padding: 2px; 
-}
-#price {
-    font-size: 4rem;
-    font-weight: 400;
-}
-#header-button:hover {
-    padding: 2px; 
-    background-color: white; 
-    color: #2020c3; 
-}
-.budget {
-    display: flex; 
-    gap: 25px; 
-    
-}
-#budget, #country {
-    width: 150px; 
-    background-color: white; 
-    height: 30px; 
-    font-weight: 500;
-}
-#man {
-    width: 75px; 
-    height: 75px; 
-    border-radius: 50%; 
-    padding: 10px; 
-    margin-top: 20px; 
-}
- 
-
-#header-button {
-    height: 30px;
-    border-radius: 20px; 
-    background-color: #2020c3;  
+    background-color: blue; 
     color: white; 
-    margin-right: 15px; 
+    padding: 8px; 
+    border-radius: 12px;
 }
-#header-icon {
-    width: 75px; 
-    height: 75px; 
-    position: fixed; 
-    left: 30px; 
+.header-top {
+    font-size: 3.1rem; 
 }
-.why {
-    text-align: center;
-    display: flex; 
-    flex-direction: column; 
-    margin: 0 200px; 
-    gap: 5px; 
-    height: 250px; 
-    margin-top: 50px; 
-}
-#button-two {
-    width: 100px; 
-    height: 30px; 
-    background-color: #2020c3;
-    border-radius: 20px;  
-    color: white; 
-    margin-left: 20px; 
-}
-#button-two:hover {
-    background-color: white; 
-    color: #2020c3;
-    padding: 2px; 
-}
-.button > a {
-    text-decoration: none;
+#feature {
     color: blue; 
 }
-.main-top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+#feature:hover {
+    background-color: blue; 
+    color: white; 
+    padding: 5px; 
+}
+.top-container {
+    display: flex; 
+    justify-content: space-around;
+    width: 100%; 
     background-image: url(/assets/bg/background-top.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px; 
+    height: 400px; 
     width: 100%; 
 }
-.button {
+.right-top {
     display: flex; 
-    gap: 15px; 
-    align-items: center; 
+    gap: 20px; 
 }
-.horizontal-items {
-    display: flex; 
-    gap: 25px; 
-    justify-content: center;
-    align-items: center;
-    height: 125px; 
-    padding: 50px; 
+.left-top {
+    width: 400px; 
 }
-.item {
+#asana, #atlassian, #calendar, #ads, #google, #paypal, #weave {
+    width: 50px; 
+    height: 50px; 
+    box-shadow: 3px 3px 3px black; 
+    border-radius: 50%; 
+}
+#google {
+    position: relative; 
+    top: 50px; 
+    left: 40px; 
+}
+#asana {
+    position: relative; 
+    top: 90px; 
+    left: 20px; 
+}
+#atlassian {
+    position: relative; 
+    top: 150px; 
+    left: 90px; 
+}
+#calendar {
+    position: relative; 
+    top: 70px; 
+    left: 20px; 
+}
+#ads {
+    position: relative; 
+    top: 200px; 
+    left: -150px; 
+}
+#weave {
+    position: relative; 
+    top: 250px; 
+    left: -90px; 
+}
+#paypal {
+    position: relative; 
+    top: 50px; 
+    left: 40px; 
+}
+.middle {
     display: flex; 
     flex-direction: column;
-    align-items: center; 
-    
-    gap: 40px; 
+    align-items: center;
+}
+.middle > p {
+    width: 400px; 
+}
+.circles {
+    display: flex; 
+    justify-content: center;
+    gap: 20px; 
+}
+.one, .two, .three, .four {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .pricing {
     display: flex; 
     flex-direction: column;
-    align-items: center; 
-    gap: 5px;
-    margin-top: 50px 50px;  
-    padding: 100px;    
-}
-.left-pricing {
-    display: flex; 
-    justify-content: center;
     align-items: center;
-}
-.bottom-stuff {
-    display: flex; 
-    
-    width: 100%; 
-    gap: 20px; 
-    margin: 0 25px; 
     padding: 25px; 
 }
-.left-paragraph, .left-button-bottom {
-    display: flex; 
-    flex-direction: column;
+.month {
+    font-weight: 300;
 }
-#bottom-button {
+#dollar {
+    font-size: 2rem;
+}
+#price {
+    font-weight: 300;
+    font-size: 1rem;
+}
+.amount {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+#fine-print {
+    font-size: .8rem;
+}
+#video {
     width: 100px; 
-    height: 35px; 
-    border-radius: 20px; 
-    background-color: rgb(61, 61, 242); 
-    color: white; 
+    height: 45px; 
+    background-color: blue; 
+    border-radius: 20px;
+    color: white;
+}
+.button {
+    display: flex; 
+    justify-content: center;
+}
+.bottom-container {
+    display: flex; 
+    gap: 25px; 
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#components, #cancel, #images, #moneyback {
+    width: 80px; 
+    height: 80px; 
+}
+.left {
+    width: 350px; 
+    box-shadow: 4px 4px 3px black;
+    margin-left: 25px;
 }
 .right {
+    width: 350px; 
+    margin-right: 25px; 
+}
+#man {
+    border-radius: 50%; 
+}
+.form-container {
     display: flex; 
-    height: 400px; 
+    justify-content: space-around;
+    background-color: navy;
+    color: white; 
+    height: 100%; 
+    padding: 25px; 
+}
+form {
+    display: flex;  
+    flex-direction: column;
+}
+
+.right-form {
+    display: flex; 
+    flex-direction: column;
+    gap: 30px; 
+    background-color: white; 
     padding: 20px; 
+    border-radius: 12px; 
+}
+.checkbox {
+    display: flex; 
+    
+    
+}
+#business {
+    font-size: 1.3rem;
+    
+}
+.right-form > input {
+    height: 30px; 
+    border-radius: 7px; 
+
+}
+#fname, #lname, #email {
+    height: 30px; 
+    border-radius: 12px; 
+   
+}
+.selects {
+    display: flex; 
+    justify-content: space-around;
+    gap: 20px; 
+}
+.selects > select {
+    height: 40px; 
+    width: 100%; 
+}
+input {
+    height: 30px; 
+    width: 100%; 
+}
+.names {
+    display: flex; 
+    gap: 15px; 
+}
+#start {
+    background-color: aquamarine;
+    width: 120px;
+    height: 35px; 
+    border-radius: 20px; 
+    box-shadow: 3px 3px 3px black; 
+    text-align: center;
+}
+button:hover {
+    padding: 10px; 
+    background-color: blue; 
+    color: white; 
+    border-radius: 8px; 
+}
+#start:hover {
+    background-color: blue; 
+    color: white; 
+    padding: 5px; 
+}
+#one {
+    color: black; 
+    margin-right: 250px; 
+}
+#comments {
+    width: 100%; 
+    height: 300px; 
+}
+#footer-front {
+    width: 80px; 
+    height: 80px; 
+}
+.footer-container {
+    display: flex; 
+    justify-content: space-evenly;
+    color: gray; 
+    flex-wrap: wrap;
+    
+}
+.one-footer {
+    flex-direction: column;
+}
+.hiring {
+    color: blue; 
+}
+#hiring {
+    background-color: blue; 
+    color: white; 
+    padding: 3px; 
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        display: none; 
+    }
+    .navigation {
+        display: flex; 
+        justify-content: flex-end;
+        margin-right: 25px;
+        margin-top: -40px;
+    }
+    .my-button {
+        background-color: transparent;
+        border: 0; 
+        width: 75px; 
+    }
+    .bottom-container {
+        padding: 15px; 
+    }
+    .left-form {
+        margin-bottom: 50px;
+        padding: 20px; 
+    }
+    .top-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .asana, .atlassian, .calendar, .ads, .google, .paypay, .weave {
+        position: relative; 
+        top: -200px; 
+        
+    }
+    .middle {
+        flex-direction: column;
+        margin-top: 200px; 
+        padding: 25px; 
+    }  
+    .left {
+        width: 100%;
+        justify-content: center;
+    }
+    .amount {
+        text-align: center;
+    }
+    
+    .right-top {
+        margin-top: 100px;
+        padding: 20px; 
+    }
+    .circles {
+        flex-direction: row;
+    }
+    .one, .two, .three, .four {
+        flex-direction: row;
+        gap: 20px; 
+    }
+    .bottom-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .excess {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+    .middle {
+        margin-bottom: 75px;
+    }
+    .form-container {
+        flex-direction: column;
+    }
+  .left-form {
+    display: flex; 
+    justify-content: center;
+    gap: 30px; 
+  }
+  #man {
+    width: 75px; 
+    height: 75px; 
+  }
+  .item-1, .item-2 {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  .my-button { display: block;  
 }
 .left {
     display: flex; 
     flex-direction: column;
-}
-.hire-us-bottom-container-before-footer {
-    display: flex; 
-    background-color: #030364; 
-    color: white; 
-    gap: 30px; 
-    padding: 25px; 
-}
-.checkbox {
-    display: flex; 
-}
-.privacy {
-    display: flex; 
-    flex-direction: column;
-    gap: 25px; 
-}
-.privacy-left > p {
-    color: gray; 
-    display: flex; 
-    justify-content: center;
-}
-.bottom-text-blue {
-    color: #2a2abe; 
-}
-.gray {
-    color: gray; 
-}
-.privacy-right {
-    color: rgb(65, 65, 240); 
-}
-.button-get-started-bottom {
-    display: flex;
-    justify-content: center;  
-}
-#get-started {
-    background-color: rgb(65, 65, 240); 
-    border-radius: 20px; 
-    color: white; 
-}
-#google-logo-right, #atlasian-logo, #asana-logo, #paypal, #weave, #ads {
-    width: 75px; 
-    height: 75px;  
-    border-radius: 50%; 
-    position: relative; 
-    left: -20px; 
-}
-#ads {
-    position: relative; 
-    left: -150px;
-    top: -100px;  
-}
-#paypal {
-    position: relative; 
-    left: -150px; 
-    top: 150px; 
-}
-#atlasian-logo {
-    position: relative; 
-    left: 100px; 
-    top: 25px; 
-}
-#asana-logo {
-    position: relative; 
-    left: 200px;
-    top: 20px;  
-}
-#weave {
-    position: relative; 
-    top: 150px; 
-    left: -20px; 
-}
-#tell {
-    width: 300px; 
-    height: 150px; 
-    border-radius: 12px;
-}
-.bottom-container-right-side { 
-    background-color: white; 
-    border-radius: 12px;
-    display: flex; 
-    flex-direction: column;
-    gap: 15px; 
-    padding: 10px;
-}
-.bottom-container-left-side {
-    margin-left: 50px; 
-    font-size: 1.2rem; 
-}
-input {
-    border-radius: 5px;
-}
-#component, #image, #cancel, #moneyback {
-    width: 75px; 
-    height: 75px; 
-}
-.left-bottom {
-    box-shadow: 3px 3px 3px black;
-    height: 500px; 
-    padding: 20px;
-}
-.bottom-paragraph-0  { 
-    color: #c8cecf; 
-}
-
-.footer-bottom-container {
-    display: flex; 
-    gap: 30px; 
-}
-#bottom-logo-pic {
-    width: 75px; 
-    height: 75px; 
-}
-.logo-and-address, .features, .documentation, .resources {
-    display: flex; 
-    flex-direction: column;
-    gap: 20px; 
-    padding: 20px; 
-}
-#blue { background-color: blue; color: white; padding: 3px;  }
-#blue-2 { color: blue; }
-.company {
-    display: flex; 
-    flex-direction: column;
     align-items: center;
     gap: 30px; 
-}
-.para-1 {
     padding: 15px; 
+}
+.amount {
+    font-size: 4rem;
+}
+
+
+
+#video-button:hover {
+    background-color: white; 
+    color: blue; 
+}
+.footer-container {
+    display: grid;
+    grid-template-areas: "front company features"
+                        "front documentation resources"
+    ;
+                        
+
+}
+.one-footer {
+    grid-area: front; 
+}
+.two-footer {
+    grid-area: company;
+}
+.three-footer {
+    grid-area: features; 
+}
+.five-footer {
+    grid-area: documentation;
+}
+.four-footer {
+    grid-area: resources; 
+}
+}
+@media (max-width: 767px) {
+    
+    
+    .circles {
+        flex-direction: column;
+        margin-top: 75px;
+        margin-left: 100px;
+        margin-bottom: 80px;
+        align-items: first baseline;
+        font-size: 2rem;
+    }
+   .asana, .atlassian, .calendar, .ads, .google, .paypal, .weave {
+    position: relative; 
+    top: -100px; 
+   }
+   .paypal {
+    position: relative; 
+    top: -90px; 
+    left: -40px; 
+   }
+   .calendar {
+    position: relative; 
+    top: -90px;
+   }
+   .middle {
+    margin-top: 300px; 
+    font-size: 2rem;
+   }
+   .pricing {
+    font-size: 2rem;
+   }
+   .left {
+    margin-bottom: 50px;
+    font-size: 2rem;
+   }
+   .amount {
+    font-size: 6rem;
+    opacity: 0.8; 
+   }
+   #video { 
+    width: 200px; 
+    height: 50px; 
+    align-items: center;s 
+    opacity: 0.6; 
+   }
+ 
+   .weave {
+    position: relative; 
+    top: -200px; 
+   }
+   .ads {
+    position: relative; 
+    top: -130px; 
+   }
+    .top-container {
+        flex-direction: column;
+        align-items: center;
+        height: 300px; 
+    }
+    .one, .two, .three, .four {
+        flex-direction: row;
+        gap: 15px; 
+    }
+    .bottom-container {
+        flex-direction: column;
+        align-items: center; 
+        margin-left: 20px;
+    }
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-1 {
+        align-items: center; 
+        display: flex; 
+        flex-direction: column;
+        gap: 20px; 
+    }
+    .left-form {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-container {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        margin-bottom: 50px;
+    }
+    .two-footer, .three-footer, .four-footer, .five-footer {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #one-top {
+        width: 100%; 
+        margin-right: 100px;
+    }
+    .navbar {
+        display: none; 
+    }
+    .my-button { display: block; 
+        margin-top: -50px; 
+        height: 30px; 
+        width: 75px; 
+        background-color: transparent;
+        border: 0; 
+        opacity: 0.6;
+}
+.header-top {
     text-align: center;
 }
-
-/*mobile*/
-
-
-@media (max-width: 767px) {
-    .horizontal-items {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 30px; 
-        margin-top: 60px; 
-       
-    }
-    .main-top {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px; 
-    }
-    .left {
-        gap: 30px; 
-    }
-    .logos-right {
-        width: 250px; 
-        height: 100%; 
-    }
-    #weave {
-        top: -250px; 
-        left: 115px; 
-    }
-    #asana-logo {
-        left: -110px; 
-        top: 90px; 
-    }
-    .why {
-        display: flex; 
-        justify-content: center;
-        gap: 30px; 
-        padding: 15px; 
-    }
-    .para-1 {
-        display: flex; 
-        flex-direction: column;
-        gap: 30px; 
-        height: 100%; 
-        width: 300px;  
-        position: relative; 
-        left: -95px; 
-        font-size: 1.2rem; 
-        
-    }
-    .right {
-        height: 100%; 
-    }
-    .item {
-        display: flex; 
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-    .bottom-stuff {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px; 
-    }
-    .left-bottom {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        gap: 30px; 
-        padding: 10px; 
-    }
-    .right {
-        display: flex; 
-        flex-direction: column;
-        gap: 30px; 
-    }
-    .hire-us-bottom-container-before-footer {
-        display: flex; 
-        flex-direction: column;
-    }
-    .bottom-container-right-side {
-        display: flex; 
-        flex-direction: column;
-    }
-    .names {
-        display: flex; 
-        flex-direction: column;
-        gap: 30px; 
-    }
-    .email input {
-        width: 100%; 
-    }
-    .budget {
-        display: flex; 
-        flex-direction: column;
-        gap: 30px; 
-    }
-   #budget, #country, #tell {
-    width: 100%; 
-   }
-  .footer-bottom-container {
-    display: flex; 
-    flex-direction: column;
-    align-items: center; 
-    height: 100%; 
-    padding: 100px; 
-  }
-  .logo-and-address {
-    display: flex; 
-    flex-direction: column;
-    gap: 30px; 
-    align-items: center;
-  }
+#paragraph-one {
+    text-align: center;
     
-}
-
-/*tablet*/
-
-
-@media (min-width: 767px) AND (max-width: 1023px) {
-  .right {
-    flex-direction: column;
-    margin-bottom: 50px; 
-  }
-  .right-right-item {
-    width: 100%; 
-    margin-bottom: 50px;
-  }
- .hire-us-bottom-container-before-footer {
-    margin-top: 300px;
     padding: 20px; 
- }
- .bottom-stuff {
-    flex-direction: column;
- }
- #weave {
-    top: -100px; 
-    left: 90px; 
- }
- .main-top {
-    align-items: center;
-    flex-direction: column;
-    gap: 30px; 
-    width: 100%; 
- }
- #top-header-first {
-    width: 600px; 
-    font-size: 1.4rem; 
-    align-items: center;
-    display: flex; 
-    flex-direction: column;
-    
- }
- .left {
-    gap: 30px; 
-    align-items: center;
- }
- .bottom-stuff {
-    flex-direction: row;
- }
- .right, .right-right {
-    flex-direction: row;
- }
-.hire-us-bottom-container-before-footer {
-    display: flex; 
-    flex-direction: column;
 }
-.bottom-container-right-side {
-    display: flex; 
-    justify-content: center;
-    width: 90%; 
-    margin-left: 50px; 
+
+.item-2 {
+    text-align: center;
 }
-.footer-bottom-container, .documentation, .resources {
-    flex-wrap: wrap;
+#man {
+    padding: 50px; 
+}
+.navigation {
+    display: flex; 
+    justify-content: flex-end;
+}
+#middle-paragraph {
+    text-align: center;
+}
+#fine-print {
+    margin-left: 90px; 
+}
+#video:hover {
+    background-color: white; 
+    color: blue; 
     
 }
-.documentation {
-    margin-left: 38%; 
+#video-button:hover {
+    background-color: white; 
+    color: blue; 
+    border: 2px solid blue; 
 }
- .item {
-    display: flex; 
-    flex-direction: row;
- }
+
 
 }
