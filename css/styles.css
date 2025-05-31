@@ -325,6 +325,62 @@ button:hover {
     color: white; 
     padding: 3px; 
 }
+.eye {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #eded64; 
+}
+
+.eye .iris {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background: #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.eye .eyelid {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: #f2f2f2;
+  z-index: 2;
+  animation: blink 4s infinite ease-in-out;
+}
+
+.eye .eyelid.top {
+  top: 0;
+  border-bottom: 1px solid #ccc;
+  transform-origin: top;
+}
+
+.eye .eyelid.bottom {
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  transform-origin: bottom;
+}
+
+@keyframes blink {
+  0%, 10%, 100% {
+    transform: scaleY(0);
+  }
+  5% {
+    transform: scaleY(1);
+  }
+}
+
+
+
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .navbar {
         display: none; 
