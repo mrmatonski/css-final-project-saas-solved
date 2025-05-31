@@ -1,351 +1,382 @@
+/* ========== Base ========== */
 * {
-    box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0; 
-    padding: 0;
-    font-family: sans-serif;
-}
-.my-button {
-    display: none; 
-    
-     
-    
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-#charlotte {
-    color: white; 
-}
-#video-button {
-    width: 100px; 
-    height: 40px;  
-    background-color: #4646de; 
-    color: white; 
-    border-radius: 20px; 
-    opacity: 0.7; 
-    margin-bottom: 25px; 
-}
-.buy {
-    border-radius: 20px; 
-    background-color: #aeae82;
-    border: 3px solid gray; 
-}
-#video-button:hover {
-    background-color: white; 
-    color: blue; 
-    padding: 5px; 
-    box-shadow: 7px 7px 7px black;
-}
-#top-para-blue {
-    color: #3c3cee; 
-    margin-bottom: 50px;
-}
-.button-top-page {
-    display: flex; 
-    gap: 20px; 
-}
-#number {
-    color: #2929ee; 
-}
-#hamburger-menu {
-    display: none; 
-}
-#menu {
-    display: none; 
-}
 h3 {
-    font-weight: bold;
-    color: black; 
+  font-weight: bold;
+  color: black;
 }
+
+button:hover {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+}
+
+/* ========== Header & Navigation ========== */
 #front {
-    width: 100px; 
-    height: 75px; 
+  width: 100px;
+  height: 75px;
 }
+
 .navbar {
-    display: flex; 
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px; 
-    margin-right: 25px;
-    margin-top: -35px; 
-    box-shadow: 5px 5px 5px silver;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  margin-right: 25px;
+  margin-top: -35px;
+  box-shadow: 5px 5px 5px silver;
 }
-#one-top {
-    color: gray; 
-    font-size: 1.2rem; 
-    
-}
+
 .navbar > a {
-    text-decoration: none;
-    color: gray; 
+  text-decoration: none;
+  color: gray;
 }
+
 .navbar > a:hover {
-    background-color: blue; 
-    color: white; 
-    padding: 8px; 
-    border-radius: 12px;
+  background-color: blue;
+  color: white;
+  padding: 8px;
+  border-radius: 12px;
 }
-.header-top {
-    font-size: 3.1rem; 
-}
+
 #feature {
-    color: blue; 
+  color: blue;
 }
+
 #feature:hover {
-    background-color: blue; 
-    color: white; 
-    padding: 5px; 
+  background-color: blue;
+  color: white;
+  padding: 5px;
 }
+
+.my-button {
+  display: none;
+}
+
+/* ========== Top Section ========== */
 .top-container {
-    display: flex; 
-    justify-content: space-around;
-    width: 100%; 
-    background-image: url(/assets/bg/background-top.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px; 
-    width: 100%; 
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-image: url(/assets/bg/background-top.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
 }
-.right-top {
-    display: flex; 
-    gap: 20px; 
-}
+
 .left-top {
-    width: 400px; 
+  width: 400px;
 }
-#asana, #atlassian, #calendar, #ads, #google, #paypal, #weave {
-    width: 50px; 
-    height: 50px; 
-    box-shadow: 3px 3px 3px black; 
-    border-radius: 50%; 
+
+.header-top {
+  font-size: 3.1rem;
 }
-#google {
-    position: relative; 
-    top: 50px; 
-    left: 40px; 
+
+#paragraph-one {
+  text-align: center;
+  padding: 20px;
 }
-#asana {
-    position: relative; 
-    top: 90px; 
-    left: 20px; 
+
+.button-top-page {
+  display: flex;
+  gap: 20px;
 }
-#atlassian {
-    position: relative; 
-    top: 150px; 
-    left: 90px; 
+
+#video-button {
+  width: 100px;
+  height: 40px;
+  background-color: #4646de;
+  color: white;
+  border-radius: 20px;
+  opacity: 0.7;
+  margin-bottom: 25px;
 }
-#calendar {
-    position: relative; 
-    top: 70px; 
-    left: 20px; 
+
+#video-button:hover {
+  background-color: white;
+  color: blue;
+  padding: 5px;
+  box-shadow: 7px 7px 7px black;
+  border: 2px solid blue;
 }
-#ads {
-    position: relative; 
-    top: 200px; 
-    left: -150px; 
+
+#top-para-blue {
+  color: #3c3cee;
+  margin-bottom: 50px;
 }
+
+.right-top {
+  display: flex;
+  gap: 20px;
+}
+
+#asana,
+#atlassian,
+#calendar,
+#ads,
+#google,
+#paypal,
 #weave {
-    position: relative; 
-    top: 250px; 
-    left: -90px; 
+  width: 50px;
+  height: 50px;
+  box-shadow: 3px 3px 3px black;
+  border-radius: 50%;
 }
+
+#google {
+  position: relative;
+  top: 50px;
+  left: 40px;
+}
+
+#asana {
+  position: relative;
+  top: 90px;
+  left: 20px;
+}
+
+#atlassian {
+  position: relative;
+  top: 150px;
+  left: 90px;
+}
+
+#calendar {
+  position: relative;
+  top: 70px;
+  left: 20px;
+}
+
+#ads {
+  position: relative;
+  top: 200px;
+  left: -150px;
+}
+
 #paypal {
-    position: relative; 
-    top: 50px; 
-    left: 40px; 
+  position: relative;
+  top: 50px;
+  left: 40px;
 }
+
+#weave {
+  position: relative;
+  top: 250px;
+  left: -90px;
+}
+
+/* ========== Middle Section ========== */
 .middle {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  padding: 25px;
 }
-.middle > p {
-    width: 400px; 
+
+#middle-paragraph {
+  width: 400px;
+  text-align: center;
 }
+
 .circles {
-    display: flex; 
-    justify-content: center;
-    gap: 20px; 
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
 }
-.one, .two, .three, .four {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+/* ========== Pricing Section ========== */
 .pricing {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    padding: 25px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
 }
-.month {
-    font-weight: 300;
-}
-#dollar {
-    font-size: 2rem;
-}
-#price {
-    font-weight: 300;
-    font-size: 1rem;
-}
+
 .amount {
-    font-size: 2.4rem;
-    font-weight: 500;
+  font-size: 2.4rem;
+  font-weight: 500;
 }
+
+#price {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 #fine-print {
-    font-size: .8rem;
+  font-size: 0.8rem;
 }
-#video {
-    width: 100px; 
-    height: 45px; 
-    background-color: blue; 
-    border-radius: 20px;
-    color: white;
-}
-.button {
-    display: flex; 
-    justify-content: center;
-}
+
+/* ========== Bottom Container ========== */
 .bottom-container {
-    display: flex; 
-    gap: 25px; 
-    justify-content: center;
-    margin-bottom: 50px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 15px;
 }
-#components, #cancel, #images, #moneyback {
-    width: 80px; 
-    height: 80px; 
-}
+
 .left {
-    width: 350px; 
-    box-shadow: 4px 4px 3px black;
-    margin-left: 25px;
+  width: 350px;
+  box-shadow: 4px 4px 3px black;
+  margin-left: 25px;
 }
+
 .right {
-    width: 100%; 
-    margin-right: 25px; 
+  width: 100%;
+  margin-right: 25px;
 }
-#man {
-    border-radius: 50%; 
+
+#video {
+  width: 100px;
+  height: 45px;
+  background-color: blue;
+  border-radius: 20px;
+  color: white;
 }
+
+#video:hover {
+  background-color: white;
+  color: blue;
+}
+
+#components,
+#cancel,
+#images,
+#moneyback {
+  width: 80px;
+  height: 80px;
+}
+
+/* ========== Form Section ========== */
 .form-container {
-    display: flex; 
-    justify-content: space-around;
-    background-color: navy;
-    color: white; 
-    height: 100%; 
-    padding: 25px; 
+  display: flex;
+  justify-content: space-around;
+  background-color: navy;
+  color: white;
+  padding: 25px;
 }
-form {
-    display: flex;  
-    flex-direction: column;
+
+.left-form {
+  margin-bottom: 50px;
+  padding: 20px;
 }
 
 .right-form {
-    display: flex; 
-    flex-direction: column;
-    gap: 30px; 
-    background-color: white; 
-    padding: 20px; 
-    border-radius: 12px; 
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
 }
-.checkbox {
-    display: flex; 
-    
-    
-}
-#business {
-    font-size: 1.3rem;
-    
-}
-.right-form > input {
-    height: 30px; 
-    border-radius: 7px; 
 
+.checkbox {
+  display: flex;
 }
-#fname, #lname, #email {
-    height: 30px; 
-    border-radius: 12px; 
-   
-}
-.selects {
-    display: flex; 
-    justify-content: space-around;
-    gap: 20px; 
-}
-.selects > select {
-    height: 40px; 
-    width: 100%; 
-}
-input {
-    height: 30px; 
-    width: 100%; 
-}
+
 .names {
-    display: flex; 
-    gap: 15px; 
+  display: flex;
+  gap: 15px;
 }
-#start {
-    background-color: aquamarine;
-    width: 120px;
-    height: 35px; 
-    border-radius: 20px; 
-    box-shadow: 3px 3px 3px black; 
-    text-align: center;
+
+#fname,
+#lname,
+#email {
+  height: 30px;
+  border-radius: 12px;
+  width: 100%;
 }
-button:hover {
-    padding: 10px; 
-    background-color: blue; 
-    color: white; 
-    border-radius: 8px; 
+
+.selects {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
 }
-#start:hover {
-    background-color: blue; 
-    color: white; 
-    padding: 5px; 
-    box-shadow: 7px 7px 7px black; 
+
+.selects > select {
+  height: 40px;
+  width: 100%;
 }
-#one {
-    color: black; 
-    margin-right: 250px; 
-}
+
 #comments {
-    width: 100%; 
-    height: 300px; 
+  width: 100%;
+  height: 300px;
 }
-#footer-front {
-    width: 80px; 
-    height: 80px; 
+
+#start {
+  background-color: aquamarine;
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px black;
+  text-align: center;
 }
+
+#start:hover {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  box-shadow: 7px 7px 7px black;
+}
+
+/* ========== Footer ========== */
 .footer-container {
-    display: flex; 
-    justify-content: space-evenly;
-    color: gray; 
-    flex-wrap: wrap;
-    
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: gray;
 }
+
+#footer-front {
+  width: 80px;
+  height: 80px;
+}
+
 .one-footer {
-    flex-direction: column;
+  flex-direction: column;
 }
+
 .hiring {
-    color: blue; 
+  color: blue;
 }
+
 #hiring {
-    background-color: blue; 
-    color: white; 
-    padding: 3px; 
+  background-color: blue;
+  color: white;
+  padding: 3px;
 }
+
+/* ========== Animation - Eye ========== */
 .eye {
   position: relative;
   width: 75px;
   height: 75px;
-  background: #fff;
+  background: #eded64;
   border: 3px solid #333;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #eded64; 
 }
 
 .eye .iris {
@@ -390,273 +421,7 @@ button:hover {
   }
 }
 
-
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .navbar {
-        display: none; 
-    }
-    .navigation {
-        display: flex; 
-        justify-content: flex-end;
-        margin-right: 25px;
-        margin-top: -40px;
-    }
-    .my-button {
-        background-color: transparent;
-        border: 0; 
-        width: 75px; 
-    }
-    .bottom-container {
-        padding: 15px; 
-    }
-    .left-form {
-        margin-bottom: 50px;
-        padding: 20px; 
-    }
-    .top-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .asana, .atlassian, .calendar, .ads, .google, .paypay, .weave {
-        position: relative; 
-        top: -200px; 
-        
-    }
-    .middle {
-        flex-direction: column;
-        margin-top: 200px; 
-        padding: 25px; 
-    }  
-    .left {
-        width: 100%;
-        justify-content: center;
-    }
-    .amount {
-        text-align: center;
-    }
-    
-    .right-top {
-        margin-top: 100px;
-        padding: 20px; 
-    }
-    .circles {
-        flex-direction: row;
-    }
-    .one, .two, .three, .four {
-        flex-direction: row;
-        gap: 20px; 
-    }
-    .bottom-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .excess {
-        display: flex; 
-        align-items: center; 
-        justify-content: center;
-    }
-    .middle {
-        margin-bottom: 75px;
-    }
-    .form-container {
-        flex-direction: column;
-    }
-  .left-form {
-    display: flex; 
-    justify-content: center;
-    gap: 30px; 
-  }
-  #man {
-    width: 75px; 
-    height: 75px; 
-  }
-  .item-1, .item-2 {
-    display: flex; 
-    flex-direction: column;
-    gap: 10px;
-    
-  }
-  .my-button { display: block;  
-}
-.left {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    gap: 30px; 
-    padding: 15px; 
-}
-.amount {
-    font-size: 4rem;
-}
-
-
-
-#video-button:hover {
-    background-color: white; 
-    color: blue; 
-}
-.footer-container {
-    display: grid;
-    grid-template-areas: "front company features"
-                        "front documentation resources"
-    ;
-                        
-
-}
-.one-footer {
-    grid-area: front; 
-}
-.two-footer {
-    grid-area: company;
-}
-.three-footer {
-    grid-area: features; 
-}
-.five-footer {
-    grid-area: documentation;
-}
-.four-footer {
-    grid-area: resources; 
-}
-}
-@media (max-width: 767px) {
-    
-    
-    .circles {
-        flex-direction: column;
-        margin-top: 75px;
-        margin-left: 100px;
-        margin-bottom: 80px;
-        align-items: first baseline;
-        font-size: 2rem;
-    }
-   .asana, .atlassian, .calendar, .ads, .google, .paypal, .weave {
-    position: relative; 
-    top: -100px; 
-   }
-   .paypal {
-    position: relative; 
-    top: -90px; 
-    left: -40px; 
-   }
-   .calendar {
-    position: relative; 
-    top: -90px;
-   }
-   .middle {
-    margin-top: 300px; 
-    font-size: 2rem;
-   }
-   .pricing {
-    font-size: 2rem;
-   }
-   .left {
-    margin-bottom: 50px;
-    font-size: 2rem;
-   }
-   .amount {
-    font-size: 6rem;
-    opacity: 0.8; 
-   }
-   #video { 
-    width: 200px; 
-    height: 50px; 
-    align-items: center;s 
-    opacity: 0.6; 
-   }
- 
-   .weave {
-    position: relative; 
-    top: -200px; 
-   }
-   .ads {
-    position: relative; 
-    top: -130px; 
-   }
-    .top-container {
-        flex-direction: column;
-        align-items: center;
-        height: 300px; 
-    }
-    .one, .two, .three, .four {
-        flex-direction: row;
-        gap: 15px; 
-    }
-    .bottom-container {
-        flex-direction: column;
-        align-items: center; 
-        margin-left: 20px;
-    }
-    .form-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item-1 {
-        align-items: center; 
-        display: flex; 
-        flex-direction: column;
-        gap: 20px; 
-    }
-    .left-form {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-container {
-        display: flex; 
-        flex-direction: column;
-        align-items: center; 
-        margin-bottom: 50px;
-    }
-    .two-footer, .three-footer, .four-footer, .five-footer {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #one-top {
-        width: 100%; 
-        margin-right: 100px;
-    }
-    .navbar {
-        display: none; 
-    }
-    .my-button { display: block; 
-        margin-top: -50px; 
-        height: 30px; 
-        width: 75px; 
-        background-color: transparent;
-        border: 0; 
-        opacity: 0.6;
-}
-.header-top {
-    text-align: center;
-}
-#paragraph-one {
-    text-align: center;
-    
-    padding: 20px; 
-}
-
-.item-2 {
-    text-align: center;
-}
-#man {
-    padding: 50px; 
-}
-.navigation {
-    display: flex; 
-    justify-content: flex-end;
-}
-#middle-paragraph {
-    text-align: center;
-}
-#fine-print {
-    margin-left: 90px; 
-}
-
+/* ========== Animation - Elvis ========== */
 .elvis {
   position: relative;
   width: 75px;
@@ -717,18 +482,4 @@ button:hover {
   100% {
     transform: rotate(0deg);
   }
-}
-
-#video:hover {
-    background-color: white; 
-    color: blue; 
-    
-}
-#video-button:hover {
-    background-color: white; 
-    color: blue; 
-    border: 2px solid blue; 
-}
-
-
 }
