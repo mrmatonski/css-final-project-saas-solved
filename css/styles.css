@@ -26,6 +26,17 @@ body {
     opacity: 0.7; 
     margin-bottom: 25px; 
 }
+.buy {
+    border-radius: 20px; 
+    background-color: #aeae82;
+    border: 3px solid gray; 
+}
+#video-button:hover {
+    background-color: white; 
+    color: blue; 
+    padding: 5px; 
+    box-shadow: 7px 7px 7px black;
+}
 #top-para-blue {
     color: #3c3cee; 
     margin-bottom: 50px;
@@ -294,6 +305,7 @@ button:hover {
     background-color: blue; 
     color: white; 
     padding: 5px; 
+    box-shadow: 7px 7px 7px black; 
 }
 #one {
     color: black; 
