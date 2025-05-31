@@ -531,6 +531,12 @@ button:hover {
 .four-footer {
     grid-area: resources; 
 }
+.middle-lower, .right {
+    display: flex;
+    flex-direction: column; 
+}
+
+
 }
 @media (max-width: 767px) {
     
