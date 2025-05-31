@@ -74,7 +74,12 @@ h3 {
 #one-top {
     color: gray; 
     font-size: 1.2rem; 
+    flex: 1;  
     
+}
+.paragraph-checkbox {
+    display: flex; 
+    width: 300px; 
 }
 .navbar > a {
     text-decoration: none;
@@ -218,6 +223,8 @@ h3 {
     grid-template-areas: "left components images"
                         ". cancel moneyback ";
     gap: 30px; 
+    padding: 30px; 
+    margin-bottom: 50px; 
     
      
 }
@@ -283,11 +290,16 @@ form {
     padding: 20px; 
     border-radius: 12px; 
 }
-.checkbox {
+.checkbox-container {
     display: flex; 
-    
-    
+    align-items: center;
+    justify-content: center;
+         
 }
+#checkbox {
+    width: 50px; 
+}
+
 #business {
     font-size: 1.3rem;
     
@@ -424,6 +436,7 @@ button:hover {
 
 
 
+/*tablet*/
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .navbar {
@@ -540,6 +553,9 @@ button:hover {
 
 
 }
+
+/*mobile*/
+
 @media (max-width: 767px) {
     
     
@@ -573,6 +589,26 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 15px; 
+   }
+  
+   .bottom-container {
+    display: flex; 
+    flex-direction: column;
+    
+   }
+   .pricing {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+   }
+   .left {
+    display: flex; 
+    flex-direction: column;
+    width: 350px; 
+    margin-left: -40px; 
+   }
+   #email {
+    height: 40px; 
    }
 
    .asana, .atlassian, .calendar, .ads, .google, .paypal, .weave {
@@ -655,10 +691,8 @@ button:hover {
         align-items: center;
     }
 
-    #one-top {
-        width: 100%; 
-        margin-right: 100px;
-    }
+    
+   
     .navbar {
         display: none; 
     }
