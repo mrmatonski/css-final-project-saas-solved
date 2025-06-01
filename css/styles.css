@@ -74,12 +74,13 @@ h3 {
 #one-top {
     color: gray; 
     font-size: 1.2rem; 
-    flex: 1;  
+    width: 100%;  
+    
     
 }
 .paragraph-checkbox {
     display: flex; 
-    width: 300px; 
+    width: 100%; 
 }
 .navbar > a {
     text-decoration: none;
@@ -210,7 +211,7 @@ h3 {
     color: white;
 }
 .left {
-    grid-row: 1 / span 2;  
+      
     grid-column: 1 / span 2; 
     padding: 40px; 
 }
@@ -250,6 +251,7 @@ h3 {
     box-shadow: 4px 4px 3px black;
     margin-left: 25px;
     grid-area: left; 
+    grid-row: 1 / span 2;
 }
 .images {
     grid-area: images; 
@@ -292,8 +294,10 @@ form {
 }
 .checkbox-container {
     display: flex; 
+    gap: 15px; 
     align-items: center;
-    justify-content: center;
+    width: 100%; 
+    
          
 }
 #checkbox {
@@ -474,7 +478,10 @@ button:hover {
     }  
     .left {
         width: 100%;
-        justify-content: center;
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        margin-left: 50px;
     }
     .amount {
         text-align: center;
@@ -491,7 +498,9 @@ button:hover {
         flex-direction: row;
         gap: 20px; 
     }
-   
+   .bottom-container {
+    gap: 50px; 
+   }
    
     .middle {
         margin-bottom: 75px;
@@ -604,8 +613,11 @@ button:hover {
    .left {
     display: flex; 
     flex-direction: column;
+    align-items: center;
     width: 350px; 
-    margin-left: -40px; 
+   
+     
+
    }
    #email {
     height: 40px; 
