@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box; 
+    font-family: verdana;
 }
 
 body {
@@ -9,11 +10,15 @@ body {
 }
 .my-button {
     display: none; 
-    
-     
-    
 }
-
+textarea {
+    border-radius: 12px; 
+}
+select {
+    background-color: white; 
+    border-radius: 8px; 
+    padding: 5px; 
+}
 #charlotte {
     color: white; 
 }
@@ -54,6 +59,42 @@ body {
 #menu {
     display: none; 
 }
+.ball {
+     width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  animation: bounce 2s ease-in-out infinite, changeColor 3s linear infinite, moveRandom 6s linear infinite;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(800px);
+  }
+}
+
+
+@keyframes changeColor {
+  0%   { background-color: red; }
+  33%  { background-color: green; }
+  66%  { background-color: blue; }
+  100% { background-color: red; }
+}
+
+
+@keyframes moveRandom {
+  0%   { left: 40%; top: 20%; }
+  25%  { left: 60%; top: 30%; }
+  50%  { left: 30%; top: 50%; }
+  75%  { left: 70%; top: 40%; }
+  100% { left: 40%; top: 20%; }
+}
+
 h3 {
     font-weight: bold;
     color: black; 
@@ -93,7 +134,8 @@ h3 {
     border-radius: 12px;
 }
 .header-top {
-    font-size: 3.1rem; 
+    font-size: 2.1rem; 
+    width: 800px;   
 }
 #feature {
     color: blue; 
@@ -316,6 +358,7 @@ form {
 #fname, #lname, #email {
     height: 30px; 
     border-radius: 12px; 
+    padding: 15px; 
    
 }
 .selects {
@@ -452,6 +495,12 @@ button:hover {
         margin-right: 25px;
         margin-top: -40px;
     }
+    .components, .images, .cancel, .moneyback {
+        display: flex;
+        flex-direction: column;
+        gap: 30px; 
+        margin-left: 25px; 
+    }
     .my-button {
         background-color: transparent;
         border: 0; 
@@ -558,6 +607,9 @@ button:hover {
 .right {
     display: flex;
     flex-direction: column.middle-lower; 
+}
+.header-top {
+    width: 100%; 
 }
 
 
@@ -718,6 +770,7 @@ button:hover {
 }
 .header-top {
     text-align: center;
+    width: 100%; 
 }
 #paragraph-one {
     text-align: center;
