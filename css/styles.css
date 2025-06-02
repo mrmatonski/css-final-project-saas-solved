@@ -194,7 +194,7 @@ h2, h3 {
     align-items: center;
 }
 .bottom-container {
-    margin-bottom: 75px;
+    margin: 50px 35px; 
 }
 .pricing {
     display: flex; 
@@ -249,15 +249,15 @@ h2, h3 {
 
 .left {
     display: grid; 
-    gap: 30px; 
+    gap: 10px; 
     grid-template-areas: "left components images"
                         "left cancel moneyback";
 }
 .price-container {
     display: flex; 
     flex-direction: column;
-    height: 100%; 
-    width: 100%; 
+    height: 150%; 
+    width: 80%; 
     align-items: center;
     padding: 25px; 
     box-shadow: 4px 4px 4px #2a2929; 
@@ -481,10 +481,23 @@ button:hover {
         flex-direction: column;
         align-items: center;
     }
-    .asana, .atlassian, .calendar, .ads, .google, .paypay, .weave {
+    .asana, .atlassian, .calendar, .ads, .paypay, .weave {
         position: relative; 
-        top: -200px; 
-        
+        top: -250px; 
+    }
+    #google {
+        position: relative; 
+        top: -150px; 
+        left: 475px; 
+    }
+    #calendar, #asana {
+        position: relative; 
+        top: 150px; 
+        left: 100px; 
+    }
+    #atlassian {
+        position: relative; 
+        top: 90px; 
     }
     .middle {
         flex-direction: column;
