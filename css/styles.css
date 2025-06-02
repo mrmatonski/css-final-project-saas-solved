@@ -584,7 +584,7 @@ button:hover {
 .footer-container {
     display: grid;
     grid-template-areas: "front company features"
-                        "front documentation resources"
+                        "front resources documentation"
     ;
                         
 
