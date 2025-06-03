@@ -208,6 +208,14 @@ h2, h3 {
 #dollar {
     font-size: 2rem;
 }
+.bottom-container {
+    display: flex; 
+}
+.grid-1 {
+    display: grid; 
+    grid-template-areas: "left components images"
+                        "left cancel moneyback";
+}
 #price {
     font-weight: 300;
     font-size: 1rem;
@@ -260,7 +268,7 @@ h2, h3 {
     width: 80%; 
     align-items: center;
     padding: 25px; 
-    box-shadow: 4px 4px 4px #2a2929; 
+    border-right: 4px solid; 
 }
 .video-button-top {
     display: flex; 
@@ -480,37 +488,56 @@ button:hover {
     .top-container {
         flex-direction: column;
         align-items: center;
+        gap: 35px; 
+        width: 100%; 
+        margin: 0 auto; 
     }
-    .asana, .atlassian, .calendar, .ads, .paypay, .weave {
-        position: relative; 
-        top: -250px; 
-    }
+
     #google {
         position: relative; 
         top: -150px; 
         left: 475px; 
     }
-    #calendar, #asana {
+   #calendar {
+    position: relative; 
+    left: -275px;
+    top: -150px; 
+}
+    #ads {
         position: relative; 
-        top: 150px; 
-        left: 100px; 
+        top: -50px; 
+        left: -5px; 
     }
     #atlassian {
         position: relative; 
-        top: 90px; 
+        top: -60px; 
+        left: 40px; 
+    }
+    #asana {
+        position: relative; 
+        left: -10px; 
+        top: -20px; 
     }
     .middle {
         flex-direction: column;
         margin-top: 200px; 
         padding: 25px; 
     }  
-    .left {
-        width: 100%;
-        display: flex; 
-        flex-direction: column;
-        align-items: center; 
-        margin-left: 50px;
+   
+    .price-container { grid-area: price; }
+    .components { grid-area: components; }
+    .images { grid-area: images; }
+    .moneyback { grid-area: moneyback; }
+    .grid-1 {
+        display: grid; 
+        gap: 30px; 
+        grid-template-areas: 
+                            "price"
+                            "components images"
+                             "cancel moneyback";
     }
+        
+    
     .amount {
         text-align: center;
     }
@@ -520,16 +547,17 @@ button:hover {
         padding: 20px; 
     }
     .circles {
+        display: flex; 
         flex-direction: row;
+        gap: 30px; 
     }
     .one, .two, .three, .four {
         flex-direction: row;
         gap: 20px; 
     }
-   .bottom-container {
-    display: flex; 
-    flex-direction: column;
-   }
+
+
+
    .components {
     grid-area: components; 
    }
@@ -541,11 +569,6 @@ button:hover {
    }
    .moneyback {
     grid-area:  moneyback; 
-   }
-   .grid {
-    display: grid; 
-    grid-template-areas: "components images"
-                        "cancel moneyback";
    }
    
     .middle {
@@ -571,9 +594,15 @@ button:hover {
   }
   .my-button { display: block;  
 }
-
-
-
+.bottom-container {
+    display: flex; 
+    flex-direction: column;
+}
+.grid-1 {
+    display: grid; 
+    grid-template-areas: "components images"
+                         "cancel moneyback";
+}
 #video-button:hover {
     background-color: white; 
     color: blue; 
@@ -581,10 +610,7 @@ button:hover {
 .footer-container {
     display: grid;
     grid-template-areas: "front company features"
-                        "front resources documentation"
-    ;
-                        
-
+                        "front resources documentation";
 }
 .one-footer {
     grid-area: front; 
@@ -608,223 +634,109 @@ button:hover {
 .header-top {
     width: 100%; 
 }
-
-
+#weave {
+    position: relative; 
+    top: -90px;  
+    left: 45px; 
 }
-
+#paypal {
+    position: relative; 
+    top: -10px; 
+}
+.price-container {
+    display: flex; 
+    flex-direction: column;
+    gap: 30px; 
+    align-items: center; 
+    margin-bottom: 55px; 
+}
+}
 /*mobile*/
-
 @media (max-width: 767px) {
-    
-    
-    .circles {
-        flex-direction: column;
-        margin-top: 75px;
-        margin-left: 25px; 
-        margin-bottom: 80px;
-        align-items: first baseline;
-        font-size: 2rem;
-    }
-    .right, .middle-lower {
-    display: flex;
-    flex-direction: column; }
-
-    .right-form {
-        display: flex; 
-        flex-direction: column;
-        width: 100%; 
-    }
-    .names, .selects {
-        display: flex; 
-        flex-direction: column;
-    }
-   #fname, #lname {
-    height: 40px; 
-    width: 100%; 
-   }
-   .one-footer {
+ .bottom-container {
     display: flex; 
     flex-direction: column;
-    align-items: center;
-    gap: 15px; 
-   }
-  
-   .bottom-container {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    margin-left: 50px;
-   }
-   p {
-    font-size: 0.8rem;
-    padding: 15px; 
-    margin: auto; 
-   }
-   .pricing {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-   }
-   .left {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    margin: 10px auto;
-    width: 400px; 
-    margin-left: -50px;  
-   
-     
-
-   }
-   #email {
-    height: 40px; 
-   }
-
-   .asana, .atlassian, .calendar, .ads, .google, .paypal, .weave {
-    position: relative; 
-    top: -100px; 
-   }
-   .paypal {
-    position: relative; 
-    top: -90px; 
-    left: -40px; 
-   }
-   .calendar {
-    position: relative; 
-    top: -90px;
-   }
-   .middle {
-    margin-top: 300px; 
-    font-size: 2rem;
-   }
-   .pricing {
-    font-size: 2rem;
-   }
-   .left {
-    margin-bottom: 50px;
-    font-size: 2rem;
-   }
-   .amount {
-    font-size: 6rem;
-    opacity: 0.8; 
-   }
-   #video { 
-    width: 200px; 
-    height: 50px; 
-    align-items: center;s 
-    opacity: 0.6; 
-   }
- 
-   .weave {
-    position: relative; 
-    top: -200px; 
-   }
-   .ads {
-    position: relative; 
-    top: -130px; 
-   }
-    .top-container {
-        flex-direction: column;
-        align-items: center;
-        height: 300px; 
-    }
-    .one, .two, .three, .four {
-        flex-direction: row;
-        gap: 15px; 
-    }
-  
-    .form-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item-1 {
-        align-items: center; 
-        display: flex; 
-        flex-direction: column;
-        gap: 20px; 
-    }
-    .left-form {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-container {
-        display: flex; 
-        flex-direction: column;
-        align-items: center; 
-        margin-bottom: 50px;
-    }
-    .two-footer, .three-footer, .four-footer, .five-footer {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-    }
-
-    
-   
-    .navbar {
-        display: none; 
-    }
-    .my-button { display: block; 
-        margin-top: -50px; 
-        height: 30px; 
-        width: 75px; 
-        background-color: transparent;
-        border: 0; 
-        opacity: 0.6;
-}
-.header-top {
-    text-align: center;
-    width: 100%; 
-}
-#paragraph-one {
-    text-align: center;
-    
-    padding: 20px; 
-}
-
-.item-2 {
-    text-align: center;
-}
-#man {
-    padding: 50px; 
-}
-.navigation {
+ } 
+ .navbar {
+    display: none; 
+ }
+ .my-button {
+    display: block;
+    background-color: transparent;
+ }
+ .navigation {
     display: flex; 
     justify-content: flex-end;
+    
+ }
+.right-top {
+    width: 100%; 
 }
-#middle-paragraph {
-    text-align: center;
-}
-#fine-print {
-    margin-left: 90px; 
+.header-top { font-size: 1.9rem; }
+.header-top, #paragraph-one {
+    margin-left: 25px; 
 }
 .button-top-page {
     display: flex; 
-    justify-content: center;
-    margin-bottom: 15px;
-    padding: 15px; 
+    flex-direction: column;
+    align-items: center;
 }
-#business, #fine-print {
-    width: 300px; 
-    text-align: center;
-    margin: 0 auto; 
-    padding: 25px; 
-}
-.video-button-top {
+    .circles {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+ .grid-1, .form-container, .top-container, .footer-container {
     display: flex; 
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px; 
+ }
+.names, .selects {
+    display: flex; 
+    flex-direction: column;
+    gap: 15px; 
 }
-#video:hover {
-    background-color: white; 
-    color: blue; 
-    
+#paypal {
+    position: relative; 
+    left: -360px; 
+    top: -20px; 
 }
-#video-button:hover {
-    background-color: white; 
-    color: blue; 
-    border: 2px solid blue; 
+#weave {
+    position: relative; 
+    left: -300px; 
 }
-
-
+ #calendar {
+    left: -30px; 
+ }
+ #atlassian {
+    position: relative; 
+    left: -30px; 
+    top: 20px; 
+ }
+ #google {
+    position: relative; 
+    top: 240px; 
+ }
+ #ads {
+    position: relative; 
+    top: 150px; 
+ }
+ .middle {
+    margin-top: 400px; 
+    padding: 25px; 
+ }
+ .right-form {
+    width: 100%; 
+ }
+ .three > p {
+    text-align: center;
+ }
+ .right-form > input {
+    height: 35px; 
+    width: 100%; 
+    border-radius: 10px; 
+ }
+ 
+ 
 }
